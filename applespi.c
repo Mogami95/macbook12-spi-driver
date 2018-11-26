@@ -124,11 +124,11 @@
 
 #define SYNAPTICS_VENDOR_ID	0x06cb
 
-static unsigned int fnmode = 1;
+static unsigned int fnmode = 2;
 module_param(fnmode, uint, 0644);
 MODULE_PARM_DESC(fnmode, "Mode of fn key on Apple keyboards (0 = disabled, [1] = fkeyslast, 2 = fkeysfirst)");
 
-static unsigned int fnremap;
+static unsigned int fnremap = 1;
 module_param(fnremap, uint, 0644);
 MODULE_PARM_DESC(fnremap, "Remap fn key ([0] = no-remap; 1 = left-ctrl, 2 = left-shift, 3 = left-alt, 4 = left-meta, 6 = right-shift, 7 = right-alt, 8 = right-meta)");
 
