@@ -1,0 +1,10 @@
+--- a/drivers/nvme/host/pci.c   2017-01-22 21:49:03.710949755 -0800
++++ b/drivers/nvme/host/pci.c   2017-01-22 21:49:23.490761505 -0800
+@@ -2121,6 +2121,7 @@
+                .driver_data = NVME_QUIRK_DELAY_BEFORE_CHK_RDY, },
+        { PCI_DEVICE_CLASS(PCI_CLASS_STORAGE_EXPRESS, 0xffffff) },
+        { PCI_DEVICE(PCI_VENDOR_ID_APPLE, 0x2001) },
++       { PCI_DEVICE(PCI_VENDOR_ID_APPLE, 0x2003) },
+        { 0, }
+ };
+ MODULE_DEVICE_TABLE(pci, nvme_id_table);
